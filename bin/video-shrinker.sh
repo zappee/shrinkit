@@ -6,10 +6,10 @@
 # Release: 0.1.0
 # Created by arnold.somogyi@gmail.com
 #
-# video-reducer.sh [directory] [true|false]
-#    param 1: directory where the video files sit
-#    param 2: set it to true if you would like to overwrite the original video
-#             files
+# video-shrinker.sh <directory> [overwrite]
+#    <directory>: Path to the folder containing the video files.
+#    [overwrite]: Set to 'true' to replace original videos.
+#                 Set to 'false' to keep originals. (Default)
 # ##############################################################################
 FILE_MASK="*.mp4"
 VIDEO_BIT_RATE="3000k"
@@ -25,10 +25,10 @@ elif [ $# -eq 2 ]; then
   DIRECTORY="$1"
   OVERWRITE="$2"
 else
-  printf "Usage: video-reducer.sh <directory> [overwrite]\n"
+  printf "Usage: video-shrinker.sh <directory> [overwrite]\n"
   printf "   <directory>: Path to the folder containing the video files.\n"
   printf "   [overwrite]: Set to 'true' to replace original videos.\n"
-  printf "                Set to 'false' to keep originals. (Default: false) \n"
+  printf "                Set to 'false' to keep originals. (Default: false)\n"
   exit 1
 fi
 
@@ -37,7 +37,7 @@ IFS=$'\n'
 mapfile -t FILES < <(find "$DIRECTORY" -type f -name "$FILE_MASK")
 
 # show the environment
-printf "Video-Reducer configuration:\n"
+printf "Configuration:\n"
 printf "   working directory:   \"%s\"\n" "$DIRECTORY"
 printf "   overwrite originals: %s\n" "$OVERWRITE"
 printf "   files selected:       %s\n" "${#FILES[@]}"

@@ -6,10 +6,10 @@
 # Release: 0.1.0
 # Created by arnold.somogyi@gmail.com
 #
-# jpg-reducer.sh [directory] [true|false]
-#    param 1: directory where the JPG files sit
-#    param 2: set it to true if you would like to overwrite the original JPG
-#             files
+# jpg-shrinker.sh <directory> [overwrite]
+#    <directory>: Path to the directory containing the JPG files.
+#    [overwrite]: Optional. Set to 'true' to replace the original files.
+#                 Defaults to 'false'.
 # ##############################################################################
 QUALITY="50%"
 
@@ -21,7 +21,7 @@ elif [ $# -eq 2 ]; then
   DIRECTORY="$1"
   OVERWRITE="$2"
 else
-  printf "Usage: jpg-reducer.sh <directory> [overwrite]\n"
+  printf "Usage: jpg-shrinker.sh <directory> [overwrite]\n"
   printf "   <directory>: Path to the directory containing the JPG files.\n"
   printf "   [overwrite]: Optional. Set to 'true' to replace the original files.\n"
   printf "                Defaults to 'false'.\n"
@@ -29,7 +29,7 @@ else
 fi
 
 # show the environment
-printf "JPG-Reducer configuration:\n"
+printf "Configuration:\n"
 printf "   working directory:   \"%s\"\n" "$DIRECTORY"
 printf "   overwrite originals: %s\n" "$OVERWRITE"
 read -r -p "Press [Enter] to continue"
@@ -42,4 +42,3 @@ if [ "$OVERWRITE" = "true" ]; then
 else
   printf "Not implemented yet\n"
 fi
-

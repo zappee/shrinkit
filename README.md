@@ -1,4 +1,4 @@
-## 🐧 Shrinkit
+## 🐧 Shrinkit - Image and Video optimizer
 
 ![GitHub top language](https://img.shields.io/github/languages/top/zappee/shrinkit)
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/shrinkit)

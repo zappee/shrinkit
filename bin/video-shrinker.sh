@@ -38,9 +38,9 @@ mapfile -t FILES < <(find "$DIRECTORY" -type f -name "$FILE_MASK")
 
 # show the environment
 printf "Configuration:\n"
-printf "   working directory:   \"%s\"\n" "$DIRECTORY"
-printf "   overwrite originals: %s\n" "$OVERWRITE"
-printf "   files selected:       %s\n" "${#FILES[@]}"
+printf "   Working directory:   \"%s\"\n" "$DIRECTORY"
+printf "   Overwrite originals: %s\n" "$OVERWRITE"
+printf "   Files selected:       %s\n" "${#FILES[@]}"
 read -r -p "Press [Enter] to continue"
 
 # loop on file list

@@ -30,8 +30,8 @@ fi
 
 # show the environment
 printf "Configuration:\n"
-printf "   working directory:   \"%s\"\n" "$DIRECTORY"
-printf "   overwrite originals: %s\n" "$OVERWRITE"
+printf "   Working directory:  \"%s\"\n" "$DIRECTORY"
+printf "   Overwrite originals: %s\n" "$OVERWRITE"
 read -r -p "Press [Enter] to continue"
 
 if [ "$OVERWRITE" = "true" ]; then

@@ -4,7 +4,7 @@
 ![GitHub Issues](https://img.shields.io/github/issues/zappee/shrinkit)
 ![GitHub Release](https://img.shields.io/github/v/release/zappee/shrinkit)
 
-**Shrinkit** is a collection of lightweight automation tools designed to drastically reduce the media file size of images and videos taken on your mobile phone, making them easier to store, share, and back up without sacrificing noticeable quality.
+**Shrinkit** is a collection of lightweight automation tools designed to drastically reduce the size of media file (images and videos) taken on your mobile phone, making them easier to store, share, and back up without sacrificing noticeable quality.
 
 ### 1) Features
 

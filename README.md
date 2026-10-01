@@ -16,7 +16,7 @@
 ### 2) Installation & Requirements
 This project relies on two external command-line tools to handle the compression:
 - **FFmpeg:** for video compression
-- **mogrify:** part of ImageMagick, used for image optimization
+- **mogrify:** part of _ImageMagick_, used for image optimization
 
 Make sure you have both installed on your system before running the scripts.
 
